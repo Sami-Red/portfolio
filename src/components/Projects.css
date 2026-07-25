@@ -3,16 +3,29 @@
 =========================== */
 
 .projects {
-    display: flex;
-
-
+    min-height: 50vh;
     background-color: var(--surface);
     color: var(--heading-color);
 
     border-bottom: 1px solid var(--border);
 }
-.projects_bottom{
-    display: flex;
-    align-items: center;
+.projects_top{
     justify-content: center;
+    
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+.projects_bottom{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.projects_card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    min-height: 250px;
 }
