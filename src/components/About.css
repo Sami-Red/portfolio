@@ -1,0 +1,59 @@
+/* ===========================
+   About Section
+=========================== */
+
+.about {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 50vh;
+
+    background-color: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   About Header
+=========================== */
+
+.about_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.5rem 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.about_top h1 {
+    margin: 0;
+
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* ===========================
+   About Content
+=========================== */
+
+.about_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem;
+    margin-top: 2rem;
+    
+    color: var(--heading-color);
+}
+
+.about_bottom h1 {
+    font-size: 2rem;
+}
+
+.about_bottom p {
+    color: var(--text);
+    margin: 0 8rem;
+}

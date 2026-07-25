@@ -1,0 +1,18 @@
+/* ===========================
+   Projects
+=========================== */
+
+.projects {
+    display: flex;
+
+
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
+.projects_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

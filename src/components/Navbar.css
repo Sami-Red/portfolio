@@ -1,0 +1,77 @@
+/* ===========================
+   Navigation Bar
+=========================== */
+
+.navbar { /* Main navigation bar */
+    display: flex;
+    margin-top: 1rem;
+
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   Navigation Sections
+=========================== */
+
+.navbar_left { /* Left section containing the logo */
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid var(--border);
+}
+
+.navbar_right { /* Right section containing the navigation links */
+    flex: 2.5;
+
+    display: flex;
+
+    border-top: 1px solid var(--border);
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.navbar_left img { /* Logo image */
+    width: 100px;
+    height: auto;
+}
+
+/* ===========================
+   Navigation Links
+=========================== */
+
+.navbar_buttons { /* Navigation links container */
+    display: flex;
+    flex: 1;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.navbar_buttons a { /* Individual navigation link */
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    background-color: var(--surface);
+
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    transition: background-color 0.3s ease;
+}
+
+.navbar_buttons a:hover { /* Navigation link hover effect */
+    background-color: var(--surface-hover);
+}

@@ -1,0 +1,129 @@
+/* ===========================
+   Global Variables
+=========================== */
+
+:root {
+    /* Colours */
+    --background: #16171d;
+    --surface: #1a1a1a;
+    --surface-hover: #080808;
+
+    --border: #2e303a;
+
+    --text: #c5c5c5;
+    --heading-color: #f3f4f6;
+
+    --accent: #0b5f00;
+    --accent-hover: #031d00;
+
+    /* Fonts */
+    --font-body: system-ui, "Segoe UI", Roboto, sans-serif;
+    --font-heading: system-ui, "Segoe UI", Roboto, sans-serif;
+
+    /* Global Typography */
+    font: 18px/145% var(--font-body);
+    letter-spacing: 0.18px;
+
+    color-scheme: dark;
+
+    color: var(--text);
+    background: var(--background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===========================
+   Global Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Global Layout
+=========================== */
+
+body {
+    background: var(--background);
+}
+
+#root {
+    width: 1126px;
+    max-width: 100%;
+    min-height: 100svh;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    border-inline: 1px solid var(--border);
+
+    text-align: center;
+}
+
+/* ===========================
+   Global Typography
+=========================== */
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+h1 {
+    font-size: 56px;
+    letter-spacing: -1.68px;
+    margin: 32px 0;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: -0.24px;
+    margin: 0 0 8px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1024px) {
+
+    :root {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 20px 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}

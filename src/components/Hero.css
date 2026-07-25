@@ -1,0 +1,104 @@
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero { /* Main hero section */
+    display: flex;
+
+    height: 50vh;
+    padding: 1rem;
+    
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   Hero Content
+=========================== */
+
+.hero_left { /* Left section containing the text and buttons */
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 1rem;
+}
+
+.hero_left h1 { /* Main heading */
+    font-size: 5rem;
+    font-weight: bold;
+
+    margin: 0.5rem 1rem 1rem 0;
+}
+
+.hero_left h2 { /* Subtitle */
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin: 2rem 1rem 1rem 0;
+}
+
+.hero_left p { /* Introduction paragraph */
+    margin: 0 1rem 1rem 0;
+
+    font-size: 1rem;
+    text-align: left;
+
+    color: var(--text);
+}
+
+/* ===========================
+   Hero Image
+=========================== */
+
+.hero_right { /* Right section containing the profile image */
+    margin: 0.5rem 1rem 1rem 0;
+}
+
+.hero_right img { /* Profile image */
+    width: 350px;
+    height: auto;
+
+    border-radius: 50px;
+}
+
+/* ===========================
+   Hero Buttons
+=========================== */
+
+.hero_buttons { /* Hero button container */
+    display: flex;
+    gap: 2rem;
+
+    margin: 0.5rem 1rem 1rem 0;
+}
+
+.hero_buttons a { /* Individual hero button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 10rem;
+    padding: 0.75rem 2rem;
+
+    border-radius: 10px;
+
+    background-color: var(--accent);
+    color: var(--heading-color);
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.hero_buttons a:hover { /* Hero button hover effect */
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
