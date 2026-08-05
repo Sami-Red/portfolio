@@ -4,7 +4,6 @@
 
 .navbar { /* Main navigation bar */
     display: flex;
-    margin-top: 1rem;
 
     background-color: var(--surface);
     color: var(--heading-color);
@@ -39,7 +38,8 @@
 
 .navbar_left img { /* Logo image */
     width: 100px;
-    height: auto;
+    height: 100px;
+    object-fit: contain;
 }
 
 /* ===========================
@@ -74,4 +74,26 @@
 
 .navbar_buttons a:hover { /* Navigation link hover effect */
     background-color: var(--surface-hover);
+}
+
+.navbar_socials img {
+    width: auto;
+    height: 30px;
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.navbar_socials img:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+}
+.navbar_socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    border-left: 1px solid var(--border);
 }

@@ -1,0 +1,98 @@
+/* ===========================
+   Skills
+=========================== */
+
+.skills {
+    min-height: 50vh;
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* Section Heading */
+
+.skills-top {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.skills-top h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Skills Grid */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Skill Card */
+
+.skill-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+
+    min-height: 250px;
+}
+
+/* Card Title */
+
+.skill-card-title {
+    margin: 0 0 1rem 0;
+
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Badge Container */
+
+.skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* Individual Badge */
+
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.6rem 1rem;
+
+    background-color: #3a3a3a;
+    border-radius: 10px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.skill-badge:hover {
+    background-color: #4a4a4a;
+    transform: translateY(-2px);
+}
+
+/* Badge Image */
+
+.skill-badge-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Badge Text */
+
+.skill-badge-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+}

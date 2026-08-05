@@ -1,8 +1,8 @@
 function Experience(){
     return(
-    <div1>
-        <h1>Experience</h1>
-    </div1>
+    <div className="experience">
+        <p>skills</p>
+    </div>
     )
 }
 export default Experience;

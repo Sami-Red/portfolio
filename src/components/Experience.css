@@ -1,0 +1,7 @@
+.experience {
+    min-height: 50vh;
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
