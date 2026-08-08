@@ -1,7 +1,99 @@
+/* ===========================
+   Experience
+=========================== */
+
 .experience {
     min-height: 50vh;
     background-color: var(--surface);
     color: var(--heading-color);
-
     border-bottom: 1px solid var(--border);
+}
+
+/* Section Heading */
+
+.experience_top {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+/* Timeline Container */
+
+.experience_timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Timeline Item */
+
+.timeline_item {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.experience_timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2rem;
+    bottom: 2rem;
+    width: 2px;
+    background-color: var(--border);
+}
+/* Timeline Marker */
+
+/* Timeline Marker */
+
+.timeline_marker {
+    width: 0;
+    height: 0;
+
+    min-width: 0;
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #ffffff;
+
+    margin-top: 10px;
+    z-index: 1;
+}
+
+/* Timeline Content Card */
+
+.timeline_content {
+    flex: 1;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 1.5rem;
+}
+
+/* Text Styling */
+
+.timeline_content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline_content h3 {
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.timeline_content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Remove extra space after last item */
+
+.timeline_item:last-child {
+    margin-bottom: 0;
 }
