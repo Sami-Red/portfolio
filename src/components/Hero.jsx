@@ -11,7 +11,13 @@ function Hero(){
             <p>Recent graduate, passionate about creating innovative software solutions.</p>
             <div className="hero_buttons">
                 <a href="#projects">Projects</a>
-                <a href="#downloadCV">Download CV</a>
+                <a
+                        className="contact_link_button"
+                        href="/cv.pdf"
+                        download="Sami-Uysal-CV.pdf"
+                    >
+                        Download CV
+                    </a>
             </div>           
             </div>
 

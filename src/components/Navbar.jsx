@@ -15,7 +15,13 @@ function Navbar(){
             <div className="navbar_buttons">
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="#about">CV</a>
+                <a
+                        className="contact_link_button"
+                        href="/cv.pdf"
+                        download="Sami-Uysal-CV.pdf"
+                    >
+                        CV
+                    </a>
             </div>
         </div>
         <div className="navbar_socials">

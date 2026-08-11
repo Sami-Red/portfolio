@@ -1,0 +1,170 @@
+/* ===========================
+   Featured Projects
+=========================== */
+
+.featured-projects {
+    min-height: 50vh;
+
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   Section Heading
+=========================== */
+
+.featured-projects_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   Project Grid
+=========================== */
+
+.featured-projects_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* ===========================
+   Project Card
+=========================== */
+
+.featured-projects_card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    min-height: 620px;
+}
+
+/* ===========================
+   Project Media
+=========================== */
+
+.featured-projects_image {
+    width: 100%;
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.featured-projects_image img,
+.featured-projects_image video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ===========================
+   Project Content
+=========================== */
+
+.featured-projects_content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    gap: 1rem;
+}
+
+.featured-projects_content h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.featured-projects_content h3 {
+    font-size: 1rem;
+
+    margin: 0;
+}
+
+.featured-projects_content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    color: var(--text);
+
+    flex: 1;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.featured-projects_button {
+    display: flex;
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-top: auto;
+}
+
+.featured-projects_button a {
+    flex: 1;
+    max-width: 180px;
+
+    padding: 0.75rem 1rem;
+
+    border-radius: 10px;
+
+    background-color: #382c2c;
+    color: var(--heading-color);
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-align: center;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.featured-projects_button a:hover {
+    background-color: #292525;
+
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 900px) {
+
+    .featured-projects_bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-projects_card {
+        min-height: auto;
+    }
+}

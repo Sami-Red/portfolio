@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--surface);
+    color: var(--heading-color);
+}
+
+.footer_links {
+    display: flex;
+    gap: 2rem;
+}
+.footer_links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer_links img {
+    width: 18px;
+    height: 18px;
+}
