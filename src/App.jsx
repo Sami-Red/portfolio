@@ -1,4 +1,6 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
+
 import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
@@ -7,21 +9,34 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import FeaturedProjects from './components/FeaturedProjects'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
-function App() {
-  return(
+function Home() {
+  return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <FeaturedProjects/>
-      <Skills/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
+      <Hero />
+      <About />
+      <FeaturedProjects />
+      <Skills />
+      <Experience />
+      <Contact />
     </div>
   )
-  
+}
+
+function App() {
+    return (
+        <div>
+            <Navbar />
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+            </Routes>
+
+            <Footer />
+        </div>
+    );
 }
 
 export default App
