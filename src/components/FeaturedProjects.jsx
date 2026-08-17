@@ -3,9 +3,9 @@
 import "./FeaturedProjects.css";
 
 import CyberxRaceVideo from "../assets/project/cyberxrace.mp4";
-import TankWorldGif from "../assets/project/TankWorldGif.gif";
-import DinoManagerGif from "../assets/project/DinoManager.gif";
-import tempPortfoliopic from "../assets/project/tempPortfoliopic.png";
+import Tankworld from "../assets/project/Tankworld.mp4";
+import Dinomanager from "../assets/project/Dinomanager.mp4";
+import Portfolio from "../assets/project/Portfolio.mp4";
 
 function FeaturedProjects() {
     return (
@@ -21,7 +21,17 @@ function FeaturedProjects() {
                 <div className="featured-projects_card">
 
                     <div className="featured-projects_image">
-                        <img src={tempPortfoliopic} alt="Portfolio Website" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={Portfolio} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="featured-projects_content">
@@ -81,7 +91,17 @@ function FeaturedProjects() {
                 <div className="featured-projects_card">
 
                     <div className="featured-projects_image">
-                        <img src={DinoManagerGif} alt="Dino Task Manager GIF" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={Dinomanager} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="featured-projects_content">
@@ -106,7 +126,17 @@ function FeaturedProjects() {
                 <div className="featured-projects_card">
 
                     <div className="featured-projects_image">
-                        <img src={TankWorldGif} alt="Tank World GIF" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={Tankworld} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="featured-projects_content">
