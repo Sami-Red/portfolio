@@ -6,10 +6,14 @@ function Contact() {
 
     return (
         <section className="contact" id="contact">
+
+            <div className="contact_top">
+                <h1>Contact</h1>
+            </div>
+
             <div className="contact_container">
 
                 <div className="contact_header">
-                    <h1>Contact</h1>
                     <p>
                         I'm currently seeking graduate software engineering opportunities and
                         would be happy to discuss roles, projects, collaborations, or technology.
@@ -26,6 +30,7 @@ function Contact() {
 
                         <div className="form_group">
                             <label htmlFor="name">Name</label>
+
                             <input
                                 id="name"
                                 type="text"
@@ -37,6 +42,7 @@ function Contact() {
 
                         <div className="form_group">
                             <label htmlFor="email">Email Address</label>
+
                             <input
                                 id="email"
                                 type="email"
@@ -54,6 +60,7 @@ function Contact() {
 
                         <div className="form_group">
                             <label htmlFor="message">Message</label>
+
                             <textarea
                                 id="message"
                                 name="message"
@@ -102,6 +109,7 @@ function Contact() {
                 </div>
 
             </div>
+
         </section>
     );
 }

@@ -6,7 +6,16 @@
     min-height: 50vh;
     background-color: var(--surface);
     color: var(--heading-color);
+
     border-bottom: 1px solid var(--border);
+}
+
+/* Section Heading */
+
+.contact_top {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
 }
 
 /* Container */
@@ -17,16 +26,11 @@
     padding: 2rem 1rem 4rem;
 }
 
-/* Header */
+/* Intro */
 
 .contact_header {
     text-align: center;
     margin-bottom: 2rem;
-}
-
-.contact_header h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .contact_header p {
@@ -36,7 +40,9 @@
     margin: 0 auto;
 }
 
-/* Form Card */
+/* ===========================
+   Form
+=========================== */
 
 .contact_form {
     display: flex;
@@ -46,10 +52,9 @@
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
+
     padding: 2rem;
 }
-
-/* Field Group */
 
 .form_group {
     display: flex;
@@ -59,9 +64,8 @@
 
 .form_group label {
     font-weight: 600;
+    text-align: left;
 }
-
-/* Inputs & Textarea */
 
 .form_group input,
 .form_group textarea {
@@ -77,9 +81,8 @@
     font-size: 1rem;
     font-family: inherit;
 
-    transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .form_group input::placeholder,
@@ -99,7 +102,9 @@
     min-height: 140px;
 }
 
-/* Button */
+/* ===========================
+   Buttons
+=========================== */
 
 .contact_button {
     align-self: flex-start;
@@ -117,9 +122,8 @@
     font-weight: 700;
     cursor: pointer;
 
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
 }
 
 .contact_button:hover:not(:disabled) {
@@ -132,15 +136,44 @@
     cursor: not-allowed;
 }
 
-/* Validation Errors */
+/* ===========================
+   Quick Links
+=========================== */
 
-.contact_form .validation-error,
-.contact_form span {
-    color: #ff6b6b;
-    font-size: 0.9rem;
+.contact_links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
-/* Success State */
+.contact_link_button {
+    min-width: 180px;
+    padding: 0.85rem 2rem;
+
+    border-radius: 10px;
+
+    background-color: #382c2c;
+    color: var(--heading-color);
+
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.contact_link_button:hover {
+    background-color: #292525;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   Success / Errors
+=========================== */
 
 .contact_success {
     text-align: center;
@@ -160,12 +193,17 @@
     color: var(--text);
 }
 
-/* Responsive */
+.contact_form .validation-error,
+.contact_form span {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+}
+
+/* ===========================
+   Responsive
+=========================== */
 
 @media (max-width: 768px) {
-    .contact_header h1 {
-        font-size: 2.4rem;
-    }
 
     .contact_form {
         padding: 1.5rem;
@@ -175,37 +213,4 @@
         width: 100%;
         align-self: stretch;
     }
-}
-/* Quick Links */
-
-.contact_links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.contact_link_button {
-    min-width: 180px;
-    padding: 0.85rem 2rem;
-
-    border: none;
-    border-radius: 10px;
-
-    background-color: #382c2c;
-    color: var(--heading-color);
-
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
-}
-
-.contact_link_button:hover {
-    background-color: #292525;
-    transform: translateY(-2px);
 }
