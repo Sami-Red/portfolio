@@ -45,7 +45,13 @@ function FeaturedProjects() {
                         </p>
 
                         <div className="featured-projects_button">
-                            <a href="#PortfolioGithub">GitHub</a>
+                            <a
+                                href="https://github.com/Sami-Red/portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            GitHub
+                            </a>
                             <a href="#PortfolioMore">View More</a>
                         </div>
                     </div>
@@ -80,7 +86,13 @@ function FeaturedProjects() {
                         </p>
 
                         <div className="featured-projects_button">
-                            <a href="#CyberXGithub">GitHub</a>
+                            <a
+                                href="https://github.com/Sami-Red/CyberX-Race"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            GitHub
+                            </a>
                             <a href="#CyberXMore">View More</a>
                         </div>
                     </div>
@@ -106,7 +118,7 @@ function FeaturedProjects() {
 
                     <div className="featured-projects_content">
                         <h2>Dino Task Manager</h2>
-                        <h3>C#, Console, Git</h3>
+                        <h3>C#, Console, GitHub</h3>
 
                         <p>
                             Developed a console-based task management application in
@@ -115,7 +127,13 @@ function FeaturedProjects() {
                         </p>
 
                         <div className="featured-projects_button">
-                            <a href="#DinoTaskManagerGithub">GitHub</a>
+                            <a
+                                href="https://github.com/Sami-Red/To-Do-List-console-version"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            GitHub
+                            </a>
                             <a href="#DinoTaskManagerMore">View More</a>
                         </div>
                     </div>
@@ -141,8 +159,7 @@ function FeaturedProjects() {
 
                     <div className="featured-projects_content">
                         <h2>Tank World</h2>
-                        <h3>C#, Unity, Git</h3>
-
+                        <h3>C#, Unity, GitHub</h3>
                         <p>
                             Developed a multiplayer tank battle game in Unity,
                             implementing network programming and real-time multiplayer
@@ -150,7 +167,13 @@ function FeaturedProjects() {
                         </p>
 
                         <div className="featured-projects_button">
-                            <a href="#TankWorldGithub">GitHub</a>
+                            <a
+                                href="https://github.com/Sami-Red/Tank_World"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            GitHub
+                            </a>
                             <a href="#TankWorldMore">View More</a>
                         </div>
                     </div>

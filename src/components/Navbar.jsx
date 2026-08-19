@@ -19,7 +19,6 @@ function Navbar() {
 
             <div className="navbar_right">
                 <div className="navbar_buttons">
-
                     <Link to="/projects">
                         Projects
                     </Link>
@@ -42,7 +41,7 @@ function Navbar() {
             <div className="navbar_socials">
 
                 <a
-                    href="https://www.linkedin.com/in/sami-uysal-657565196/"
+                    href="https://github.com/Sami-Red"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -50,7 +49,7 @@ function Navbar() {
                 </a>
 
                 <a
-                    href="https://github.com/Sami-Red"
+                    href="https://www.linkedin.com/in/sami-uysal-657565196/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

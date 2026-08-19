@@ -1,5 +1,5 @@
 /* cd C:\Users\redic\Desktop\Portfolio\software-engineer-portfolio then npm.cmd run dev */
-
+import { Link } from "react-router-dom";
 import "./Hero.css";
 import profilePic from "../assets/hero/profile-picture.jpeg";
 function Hero(){
@@ -10,14 +10,16 @@ function Hero(){
             <h2>Graduate Software Engineer</h2>
             <p>Recent graduate, passionate about creating innovative software solutions.</p>
             <div className="hero_buttons">
-                <a href="#projects">Projects</a>
+                <Link to="/projects">
+                    Projects
+                </Link>
                 <a
-                        className="contact_link_button"
-                        href="/cv.pdf"
-                        download="Sami-Uysal-CV.pdf"
-                    >
-                        Download CV
-                    </a>
+                    className="contact_link_button"
+                    href="/cv.pdf"
+                    download="Sami-Uysal-CV.pdf"
+                >
+                    Download CV
+                </a>
             </div>           
             </div>
 
