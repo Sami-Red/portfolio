@@ -14,11 +14,14 @@ function Navbar() {
         <div className="navbar">
 
             <div className="navbar_left">
-                <img src={profilePic} alt="Logo" />
+                <a href="/">
+                    <img src={profilePic} alt="Home" />
+                </a>
             </div>
 
             <div className="navbar_right">
                 <div className="navbar_buttons">
+                    <a href="/">Home</a>
                     <Link to="/projects">
                         Projects
                     </Link>

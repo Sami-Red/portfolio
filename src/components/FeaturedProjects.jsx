@@ -3,8 +3,6 @@
 import "./FeaturedProjects.css";
 
 import CyberxRaceVideo from "../assets/project/cyberxrace.mp4";
-import Tankworld from "../assets/project/Tankworld.mp4";
-import Dinomanager from "../assets/project/Dinomanager.mp4";
 import Portfolio from "../assets/project/Portfolio.mp4";
 
 function FeaturedProjects() {
@@ -96,90 +94,7 @@ function FeaturedProjects() {
                             <a href="#CyberXMore">View More</a>
                         </div>
                     </div>
-
                 </div>
-
-                {/* Dino Task Manager */}
-                <div className="featured-projects_card">
-
-                    <div className="featured-projects_image">
-                        <video
-                            className="project-video"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            preload="metadata"
-                        >
-                            <source src={Dinomanager} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <div className="featured-projects_content">
-                        <h2>Dino Task Manager</h2>
-                        <h3>C#, Console, GitHub</h3>
-
-                        <p>
-                            Developed a console-based task management application in
-                            C#, implementing CRUD functionality, methods, loops, and
-                            collections to practise core programming concepts.
-                        </p>
-
-                        <div className="featured-projects_button">
-                            <a
-                                href="https://github.com/Sami-Red/To-Do-List-console-version"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                            GitHub
-                            </a>
-                            <a href="#DinoTaskManagerMore">View More</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                {/* Tank World */}
-                <div className="featured-projects_card">
-
-                    <div className="featured-projects_image">
-                        <video
-                            className="project-video"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            preload="metadata"
-                        >
-                            <source src={Tankworld} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <div className="featured-projects_content">
-                        <h2>Tank World</h2>
-                        <h3>C#, Unity, GitHub</h3>
-                        <p>
-                            Developed a multiplayer tank battle game in Unity,
-                            implementing network programming and real-time multiplayer
-                            functionality.
-                        </p>
-
-                        <div className="featured-projects_button">
-                            <a
-                                href="https://github.com/Sami-Red/Tank_World"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                            GitHub
-                            </a>
-                            <a href="#TankWorldMore">View More</a>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
 
         </div>
