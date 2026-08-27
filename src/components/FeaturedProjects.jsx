@@ -5,6 +5,8 @@ import "./FeaturedProjects.css";
 import CyberxRaceVideo from "../assets/project/cyberxrace.mp4";
 import Portfolio from "../assets/project/Portfolio.mp4";
 
+import { Link } from "react-router-dom";
+
 function FeaturedProjects() {
     return (
         <div className="featured-projects">
@@ -50,7 +52,7 @@ function FeaturedProjects() {
                             >
                             GitHub
                             </a>
-                            <a href="#PortfolioMore">View More</a>
+                            <Link to="/projects/portfolio">View More</Link>
                         </div>
                     </div>
 

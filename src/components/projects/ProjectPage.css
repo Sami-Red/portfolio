@@ -1,0 +1,326 @@
+/* ===========================
+   Project Page
+=========================== */
+
+.project-page {
+    min-height: auto;
+
+    background-color: var(--surface);
+    color: var(--heading-color);
+
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* ===========================
+   Project Header
+=========================== */
+
+.project-page_top {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+
+    background-color: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.project-page_top h1 {
+    margin: 0 0 1rem 0;
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.project-page_top p {
+    margin: 0;
+
+    max-width: 700px;
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+/* ===========================
+   Main Project Media
+=========================== */
+
+.project-page_media {
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.project-page_media img {
+    width: 100%;
+    max-width: 900px;
+
+    border-radius: 10px;
+}
+
+
+/* ===========================
+   General Content Sections
+=========================== */
+
+.project-page_overview,
+.project-page_information,
+.project-page_features,
+.project-page_development,
+.project-page_challenges,
+.project-page_gallery,
+.project-page_learning {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+}
+
+.project-page_overview h2,
+.project-page_information h2,
+.project-page_features h2,
+.project-page_development h2,
+.project-page_challenges h2,
+.project-page_gallery h2,
+.project-page_learning h2 {
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* ===========================
+   Overview
+=========================== */
+
+.project-page_overview p,
+.project-page_development p,
+.project-page_learning p {
+    margin-bottom: 1.5rem;
+
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+.project-page_overview p:last-child,
+.project-page_development p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ===========================
+   Project Information
+=========================== */
+
+.project-page_information-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+}
+
+.project-page_information-item {
+    padding: 1rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_information-item h3 {
+    margin-bottom: 0.5rem;
+
+    font-size: 1rem;
+}
+
+.project-page_information-item p {
+    margin: 0;
+
+    color: var(--text);
+}
+
+
+/* ===========================
+   Key Features
+=========================== */
+
+.project-page_features-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+.project-page_feature {
+    padding: 1.5rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_feature h3 {
+    margin-bottom: 0.75rem;
+
+    font-size: 1.2rem;
+}
+
+.project-page_feature p {
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+/* ===========================
+   Challenges
+=========================== */
+
+.project-page_challenges-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+}
+
+.project-page_challenge {
+    padding: 1.5rem;
+
+    background-color: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_challenge h3 {
+    margin-bottom: 0.75rem;
+
+    font-size: 1.2rem;
+}
+
+.project-page_challenge p {
+    color: var(--text);
+
+    line-height: 1.6;
+}
+
+
+/* ===========================
+   Gallery
+=========================== */
+
+.project-page_gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+}
+
+.project-page_gallery-grid img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    border: 1px solid var(--border);
+}
+
+
+/* ===========================
+   Project Links
+=========================== */
+
+.project-page_links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 2rem;
+
+    padding: 2rem;
+}
+
+.project-page_links a {
+    min-width: 180px;
+
+    padding: 0.85rem 2rem;
+
+    background-color: #382c2c;
+
+    border-radius: 10px;
+
+    color: var(--heading-color);
+
+    text-align: center;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project-page_links a:hover {
+    background-color: #292525;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    .project-page_top h1 {
+        font-size: 2.4rem;
+    }
+
+    .project-page_overview,
+    .project-page_information,
+    .project-page_features,
+    .project-page_development,
+    .project-page_challenges,
+    .project-page_gallery,
+    .project-page_learning {
+        padding: 1.5rem;
+    }
+
+    .project-page_information-grid,
+    .project-page_features-grid,
+    .project-page_challenges-grid,
+    .project-page_gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-page_links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-page_links a {
+        width: 100%;
+    }
+}

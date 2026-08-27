@@ -1,4 +1,4 @@
-import './App.css'
+
 import { Routes, Route } from 'react-router-dom'
 
 import Hero from './components/Hero'
@@ -10,6 +10,8 @@ import About from './components/About'
 import FeaturedProjects from './components/FeaturedProjects'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+
+import ProjectPage from './components/projects/ProjectPage'
 
 function Home() {
   return (
@@ -32,6 +34,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/portfolio" element={<ProjectPage />} />
             </Routes>
 
             <Footer />
