@@ -5,7 +5,10 @@ import Portfolio from "../assets/project/Portfolio.mp4";
 import CyberxRaceVideo from "../assets/project/cyberxrace.mp4";
 import Tankworld from "../assets/project/Tankworld.mp4";
 import Dinomanager from "../assets/project/Dinomanager.mp4";
-import WIP from "../assets/project/WIP.jpg";
+import PhantomHunters from "../assets/project/PhantomHunters.mp4";
+import TheFoxHasAGun from "../assets/project/TheFoxHasAGun.mp4";
+import DanubeFields from "../assets/project/DanubeFields.mp4";
+import ValhallasDeception from "../assets/project/ValhallasDeception.mp4";
 
 function Projects() {
     return (
@@ -103,9 +106,7 @@ function Projects() {
                             </a>
                         </div>
                     </div>
-
                 </div>
-
 
                 {/* Dino Task Manager */}
                 <div className="projects_card">
@@ -127,7 +128,6 @@ function Projects() {
                     <div className="projects_content">
                         <h2>Dino Task Manager</h2>
                         <h3>C#, Console, GitHub</h3>
-
                         <p>
                             Developed a console-based task management application in
                             C#, implementing CRUD functionality, methods, loops, and
@@ -172,7 +172,6 @@ function Projects() {
                     <div className="projects_content">
                         <h2>Tank World</h2>
                         <h3>C#, Unity, GitHub</h3>
-
                         <p>
                             Developed a multiplayer tank battle game in Unity,
                             implementing network programming and real-time multiplayer
@@ -201,15 +200,27 @@ function Projects() {
                 <div className="projects_card">
 
                     <div className="projects_image">
-                        <img src={WIP} alt="Phantom Hunters" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={PhantomHunters} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="projects_content">
                         <h2>Phantom Hunters</h2>
                         <h3>C#, Unity, GitHub</h3>
-
                         <p>
-                            WIP
+                            Developed a 2D side-scrolling platformer 
+                            in Unity featuring enemy AI, combat, health 
+                            systems, traps, and atmospheric level design 
+                            as a solo university project.
                         </p>
 
                         <div className="projects_button">
@@ -234,15 +245,27 @@ function Projects() {
                 <div className="projects_card">
 
                     <div className="projects_image">
-                        <img src={WIP} alt="The Fox Has A Gun" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={TheFoxHasAGun} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="projects_content">
                         <h2>The Fox Has A Gun</h2>
                         <h3>C#, Unity, GitHub</h3>
-
                         <p>
-                            WIP
+                            Developed a Game AI combat simulation in Unity 
+                            featuring procedurally generated terrain, finite 
+                            state machine enemy behaviour, player combat, and 
+                            dynamic AI state transitions.
                         </p>
 
                         <div className="projects_button">
@@ -267,20 +290,33 @@ function Projects() {
                 <div className="projects_card">
 
                     <div className="projects_image">
-                        <img src={WIP} alt="Danube Fields" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={DanubeFields} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="projects_content">
                         <h2>Danube Fields</h2>
                         <h3>C#, Unreal Engine, GitHub</h3>
-
                         <p>
-                            WIP
+                            Collaborated with international students 
+                            to develop a 3D isometric sustainable farming 
+                            simulator inspired by games such as Stardew Valley 
+                            and Harvest Moon, focused on sustainable agriculture 
+                            and resource management.
                         </p>
 
                         <div className="projects_button">
                             <a
-                                href="#"
+                                href="https://github.com/goingafk/iLRN-Game-Jam-Project"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -300,20 +336,32 @@ function Projects() {
                 <div className="projects_card">
 
                     <div className="projects_image">
-                        <img src={WIP} alt="Valhalla's Deception" />
+                        <video
+                            className="project-video"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="metadata"
+                        >
+                            <source src={ValhallasDeception} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div className="projects_content">
                         <h2>Valhalla's Deception</h2>
                         <h3>C#, MonoGame, GitHub</h3>
-
                         <p>
-                            WIP
+                            Collaborated as Project Manager on a team-developed 
+                            2D hack-and-slash platformer, helping coordinate 
+                            development of combat, enemy AI, player abilities, 
+                            inventory systems, and branching gameplay mechanics.
                         </p>
 
                         <div className="projects_button">
                             <a
-                                href="#"
+                                href="https://github.com/Sami-Red/Valhalla-s-Deception"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
