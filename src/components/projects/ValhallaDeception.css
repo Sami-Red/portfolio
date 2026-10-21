@@ -1,0 +1,374 @@
+
+/* ===========================
+   Project Page
+=========================== */
+
+.project-page {
+    min-height: auto;
+    background-color: var(--surface);
+    color: var(--heading-color);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===========================
+   Project Header
+=========================== */
+
+.project-page_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.project-page_top h1 {
+    margin: 0 0 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.project-page_top p {
+    max-width: 700px;
+    margin: 0;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ===========================
+   Main Project Media
+=========================== */
+
+.project-page_media {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project-page_media img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ===========================
+   General Content Sections
+=========================== */
+
+.project-page_overview,
+.project-page_information,
+.project-page_features,
+.project-page_development,
+.project-page_challenges,
+.project-page_gameplay,
+.project-page_gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.project-page_overview h2,
+.project-page_information h2,
+.project-page_features h2,
+.project-page_development h2,
+.project-page_challenges h2,
+.project-page_gameplay h2,
+.project-page_gallery h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ===========================
+   Overview and Text
+=========================== */
+
+.project-page_overview p,
+.project-page_development p,
+.project-page_gameplay p {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.project-page_overview p:last-child,
+.project-page_development p:last-child,
+.project-page_gameplay p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===========================
+   Project Information
+=========================== */
+
+.project-page_information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-page_information-item {
+    padding: 1rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_information-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.project-page_information-item p {
+    margin: 0;
+    color: var(--text);
+}
+
+/* ===========================
+   Key Features
+=========================== */
+
+.project-page_features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-page_feature {
+    padding: 1.5rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_feature h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.project-page_feature p {
+    margin: 0;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ===========================
+   Development Assets
+=========================== */
+
+.project-page_development-assets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-page_development-assets figure {
+    min-width: 0;
+    margin: 0;
+    padding: 1.25rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_development-assets h3 {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.project-page_development-assets img {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 6px;
+}
+
+/* ===========================
+   Challenges & Lessons
+=========================== */
+
+.project-page_challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.project-page_challenge {
+    min-width: 0;
+    padding: 1.5rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_challenge h3 {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+}
+
+.project-page_challenge p {
+    margin: 0 0 0.85rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.project-page_challenge p:last-child {
+    margin-bottom: 0;
+}
+
+.project-page_challenge strong {
+    color: var(--heading-color);
+}
+
+/* ===========================
+   Full Gameplay Video
+=========================== */
+
+.project-page_gameplay-video {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    max-height: 340px;
+    height: auto;
+    margin: 1.5rem auto 0;
+    background-color: #000;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* ===========================
+   Screenshot Gallery
+=========================== */
+
+.project-page_gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.project-page_gallery-grid figure {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.project-page_gallery-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-page_gallery-grid figcaption {
+    padding: 0.75rem;
+    color: var(--text);
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+/* ===========================
+   Project Links
+=========================== */
+
+.project-page_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.project-page_links a {
+    display: inline-block;
+    min-width: 180px;
+    padding: 0.85rem 1.5rem;
+    background-color: #382c2c;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--heading-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project-page_links a:hover {
+    background-color: #292525;
+    transform: translateY(-2px);
+}
+
+.project-page_links a:focus-visible {
+    outline: 2px solid var(--heading-color);
+    outline-offset: 4px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+    .project-page_top {
+        padding: 1.5rem;
+    }
+
+    .project-page_top h1 {
+        font-size: 2.4rem;
+    }
+
+    .project-page_overview,
+    .project-page_information,
+    .project-page_features,
+    .project-page_development,
+    .project-page_challenges,
+    .project-page_gameplay,
+    .project-page_gallery {
+        padding: 1.5rem;
+    }
+
+    .project-page_information-grid,
+    .project-page_features-grid,
+    .project-page_challenges-grid,
+    .project-page_development-assets,
+    .project-page_gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-page_media {
+        padding: 1.5rem;
+    }
+
+    .project-page_gameplay-video {
+        max-height: 360px;
+    }
+
+    .project-page_links {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem;
+    }
+
+    .project-page_links a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

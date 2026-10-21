@@ -1,4 +1,5 @@
 import "./Projects.css";
+import { Link } from "react-router-dom";
 
 // Imports for images/videos
 import Portfolio from "../assets/project/Portfolio.mp4";
@@ -368,9 +369,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#ValhallasDeceptionMore">
+                            <Link to="/projects/valhallas-deception">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

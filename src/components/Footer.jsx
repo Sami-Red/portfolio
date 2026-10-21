@@ -7,7 +7,7 @@ function Footer() {
         <footer className="footer">
             <p>© 2026 Sami Uysal</p>
 
-            <p>Built with React &amp; Vite</p>
+            <p>🤍 Built with React &amp; Vite 🤍</p>
 
             <div className="footer_links">
                 <a href="https://github.com/Sami-Red" target="_blank" rel="noreferrer">
