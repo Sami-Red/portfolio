@@ -14,6 +14,7 @@ import Projects from "./components/Projects";
 import ProjectPage from "./components/projects/ProjectPage";
 import ValhallaDeception from "./components/projects/ValhallaDeception";
 import DanubeFields from "./components/projects/danubeFields";
+import PhantomHunters from "./components/projects/phantomHunters";
 
 function Home() {
     return (
@@ -47,6 +48,10 @@ function App() {
                 <Route
                     path="/projects/danube-fields"
                     element={<DanubeFields />}
+                />
+                <Route
+                    path="/projects/phantom-hunters"
+                    element={<PhantomHunters />}
                 />
             </Routes>
 

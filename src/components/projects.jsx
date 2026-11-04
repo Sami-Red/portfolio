@@ -102,9 +102,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#CyberXMore">
+                            <Link to="/projects/danube-fields">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -144,9 +144,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#DinoTaskManagerMore">
+                            <Link to="/projects/danube-fields">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -188,9 +188,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#TankWorldMore">
+                            <Link to="/projects/danube-fields">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -233,9 +233,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#PhantomHuntersMore">
+                            <Link to="/projects/phantom-hunters">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -278,9 +278,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#FoxHasAGunMore">
+                            <Link to="/projects/danube-fields">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
