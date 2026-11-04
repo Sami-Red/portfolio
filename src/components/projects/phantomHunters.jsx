@@ -25,8 +25,8 @@ function PhantomHunters() {
         },
         {
             src: phantomScreenshot03,
-            alt: "Phantom Hunters water-themed level section",
-            caption: "A water-themed section within the level",
+            alt: "Phantom Hunters blue zone level section",
+            caption: "A blue zoned themed section within the level",
         },
         {
             src: phantomScreenshot04,

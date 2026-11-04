@@ -15,6 +15,10 @@ import ProjectPage from "./components/projects/ProjectPage";
 import ValhallaDeception from "./components/projects/ValhallaDeception";
 import DanubeFields from "./components/projects/danubeFields";
 import PhantomHunters from "./components/projects/phantomHunters";
+import TheFoxHasAGun from "./components/projects/theFoxHasAGun";
+import DinoTaskManager from "./components/projects/dinoTaskManager";
+import CyberXRace from "./components/projects/cyberXRace";
+import TankWorld from "./components/projects/tankWorld";
 
 function Home() {
     return (
@@ -53,6 +57,24 @@ function App() {
                     path="/projects/phantom-hunters"
                     element={<PhantomHunters />}
                 />
+                <Route
+                    path="/projects/the-fox-has-a-gun"
+                    element={<TheFoxHasAGun />}
+                />
+                <Route
+                    path="/projects/dino-task-manager"
+                    element={<DinoTaskManager />}
+                />
+                <Route
+                    path="/projects/cyberx-race"
+                    element={<CyberXRace />}
+                />
+                <Route
+                    path="/projects/tank-world"
+                    element={<TankWorld />}
+                />
+
+
             </Routes>
 
             <Footer />
