@@ -1,5 +1,5 @@
 
-import "./ValhallaDeception.css";
+import "./GeneralProjectStyling.css";
 
 // Gameplay video
 import gameplayVideo from "../../assets/project/individualProjects/valhallasdeception/Valhallas-Deception-Gameplay-Video-01.mp4";

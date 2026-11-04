@@ -324,9 +324,9 @@ function Projects() {
                                 GitHub
                             </a>
 
-                            <a href="#DanubeFieldsMore">
+                            <Link to="/projects/danube-fields">
                                 View More
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

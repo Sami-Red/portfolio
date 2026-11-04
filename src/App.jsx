@@ -13,6 +13,7 @@ import Projects from "./components/Projects";
 
 import ProjectPage from "./components/projects/ProjectPage";
 import ValhallaDeception from "./components/projects/ValhallaDeception";
+import DanubeFields from "./components/projects/danubeFields";
 
 function Home() {
     return (
@@ -42,6 +43,10 @@ function App() {
                 <Route
                     path="/projects/valhallas-deception"
                     element={<ValhallaDeception />}
+                />
+                <Route
+                    path="/projects/danube-fields"
+                    element={<DanubeFields />}
                 />
             </Routes>
 

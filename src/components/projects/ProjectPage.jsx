@@ -1,4 +1,4 @@
-import "./ProjectPage.css";
+import "./GeneralProjectStyling.css";
 
 function ProjectPage() {
     return (
