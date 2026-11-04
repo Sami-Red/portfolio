@@ -1,221 +1,403 @@
 import "./GeneralProjectStyling.css";
+import { Link } from "react-router-dom";
+
+import portfolioVideo from "../../assets/project/Portfolio.mp4";
+
 
 function ProjectPage() {
+
+    const features = [
+        {
+            title: "Component-Based Architecture",
+            description:
+                "Built using reusable React components to separate the navigation, hero section, about section, project showcases, skills, experience and contact form.",
+        },
+        {
+            title: "Multi-Page Navigation",
+            description:
+                "Implemented client-side routing with React Router, allowing visitors to navigate between the main portfolio, project listings and dedicated project pages.",
+        },
+        {
+            title: "Responsive Interface",
+            description:
+                "Developed a dark-themed interface using custom CSS, flexible layouts and responsive breakpoints to maintain usability across different screen sizes.",
+        },
+        {
+            title: "Project Showcases",
+            description:
+                "Created dedicated project pages containing gameplay footage, screenshots, technical information and descriptions of development work.",
+        },
+        {
+            title: "Contact Integration",
+            description:
+                "Integrated Formspree with React to handle contact form submissions, including validation, submission feedback and success states.",
+        },
+        {
+            title: "External Integrations",
+            description:
+                "Added links to GitHub, LinkedIn and itch.io, alongside CV access to make professional information and projects easier to explore.",
+        },
+    ];
+
+
+    const implementationDecisions = [
+        {
+            title: "Organising the Application",
+            challenge:
+                "The portfolio needed to present several different sections and projects without becoming difficult to maintain.",
+            solution:
+                "React components separate the main sections into individual files, while React Router manages navigation between the homepage, project listings and individual project pages.",
+        },
+        {
+            title: "Consistent Project Presentation",
+            challenge:
+                "Each project contains different types of information, images and video footage, but the overall portfolio needed a consistent presentation.",
+            solution:
+                "A shared project stylesheet provides reusable layouts and styling for individual project pages, while allowing each page to present its own content.",
+        },
+        {
+            title: "Handling Contact Submissions",
+            challenge:
+                "The portfolio needed a way for visitors to send enquiries without building a separate custom backend.",
+            solution:
+                "Formspree was integrated with React to process form submissions, provide field validation and display feedback when a message is successfully submitted.",
+        },
+    ];
+
+
     return (
-        <div className="project-page">
+
+        <main className="project-page">
+
 
             {/* Project Header */}
 
-            <div className="project-page_top">
-                <h1>Project Title</h1>
+            <header className="project-page_top">
+
+                <h1>Portfolio Website</h1>
 
                 <p>
-                    A short description of the project and what it is about.
+                    A personal software engineering portfolio
+                    built with React and Vite, designed to showcase
+                    my projects, technical skills and development
+                    experience through a responsive web interface.
                 </p>
-            </div>
+
+            </header>
 
 
             {/* Main Project Media */}
 
-            <div className="project-page_media">
+            <section
+                className="project-page_media"
+                aria-label="Portfolio website demonstration"
+            >
 
-                <img
-                    src=""
-                    alt="Project preview"
-                />
+                <video
+                    className="project-page_gameplay-video"
+                    controls
+                    preload="metadata"
+                    playsInline
+                >
+                    <source
+                        src={portfolioVideo}
+                        type="video/mp4"
+                    />
 
-            </div>
+                    Your browser does not support HTML video.
+
+                </video>
+
+            </section>
 
 
             {/* Project Overview */}
 
-            <div className="project-page_overview">
+            <section className="project-page_overview">
 
                 <h2>About the Project</h2>
 
                 <p>
-                    This section provides an overview of the project, including
-                    its purpose, gameplay, goals, and the overall development
-                    process.
+                    This portfolio was developed to bring together
+                    my background, technical skills, professional
+                    experience and software development projects
+                    in one accessible location.
                 </p>
 
-            </div>
+                <p>
+                    Built using React and Vite, the application
+                    uses a component-based structure to organise
+                    the different sections of the website. Visitors
+                    can explore the main landing page, browse the
+                    projects section and navigate to dedicated
+                    pages containing more detailed information
+                    about each project.
+                </p>
+
+                <p>
+                    I designed the interface around a dark visual
+                    theme using custom CSS, with a focus on clear
+                    navigation, readable content and responsive
+                    layouts.
+                </p>
+
+                <p>
+                    The portfolio is an ongoing personal project
+                    that I use to present my development work
+                    while continuing to improve my frontend
+                    development skills.
+                </p>
+
+            </section>
 
 
             {/* Project Information */}
 
-            <div className="project-page_information">
+            <section className="project-page_information">
 
                 <h2>Project Information</h2>
 
                 <div className="project-page_information-grid">
 
-                    <div className="project-page_information-item">
-                        <h3>Engine</h3>
-                        <p>Unity</p>
-                    </div>
+                    <article className="project-page_information-item">
+                        <h3>Frontend</h3>
+                        <p>React</p>
+                    </article>
 
-                    <div className="project-page_information-item">
+                    <article className="project-page_information-item">
                         <h3>Language</h3>
-                        <p>C#</p>
-                    </div>
+                        <p>JavaScript / JSX</p>
+                    </article>
 
-                    <div className="project-page_information-item">
-                        <h3>Genre</h3>
-                        <p>Platformer</p>
-                    </div>
+                    <article className="project-page_information-item">
+                        <h3>Styling</h3>
+                        <p>CSS3</p>
+                    </article>
 
-                    <div className="project-page_information-item">
+                    <article className="project-page_information-item">
+                        <h3>Build Tool</h3>
+                        <p>Vite</p>
+                    </article>
+
+                    <article className="project-page_information-item">
+                        <h3>Routing</h3>
+                        <p>React Router</p>
+                    </article>
+
+                    <article className="project-page_information-item">
+                        <h3>Contact Integration</h3>
+                        <p>Formspree</p>
+                    </article>
+
+                    <article className="project-page_information-item">
+                        <h3>Version Control</h3>
+                        <p>Git &amp; GitHub</p>
+                    </article>
+
+                    <article className="project-page_information-item">
                         <h3>Project Type</h3>
-                        <p>Solo Project</p>
-                    </div>
+                        <p>Personal Project</p>
+                    </article>
 
                 </div>
 
-            </div>
+            </section>
 
 
             {/* Key Features */}
 
-            <div className="project-page_features">
+            <section className="project-page_features">
 
                 <h2>Key Features</h2>
 
                 <div className="project-page_features-grid">
 
-                    <div className="project-page_feature">
-                        <h3>Feature One</h3>
+                    {features.map((feature) => (
 
-                        <p>
-                            Description of an important feature or system
-                            developed for the project.
-                        </p>
-                    </div>
+                        <article
+                            className="project-page_feature"
+                            key={feature.title}
+                        >
 
-                    <div className="project-page_feature">
-                        <h3>Feature Two</h3>
+                            <h3>{feature.title}</h3>
 
-                        <p>
-                            Description of another important feature or
-                            technical system.
-                        </p>
-                    </div>
+                            <p>
+                                {feature.description}
+                            </p>
 
-                    <div className="project-page_feature">
-                        <h3>Feature Three</h3>
+                        </article>
 
-                        <p>
-                            Description of another gameplay or technical
-                            feature.
-                        </p>
-                    </div>
+                    ))}
 
                 </div>
 
-            </div>
+            </section>
 
 
             {/* Development */}
 
-            <div className="project-page_development">
+            <section className="project-page_development">
 
-                <h2>Development</h2>
+                <h2>Development &amp; Implementation</h2>
 
                 <p>
-                    Explain how the project was developed, including the tools,
-                    programming techniques, systems, and development process
-                    used to create it.
+                    The application was developed using React,
+                    with the interface divided into smaller
+                    components responsible for individual
+                    sections of the website.
                 </p>
 
                 <p>
-                    This section can also explain how different systems were
-                    designed and integrated throughout development.
+                    <strong>Component Structure:</strong> The
+                    homepage is organised into components
+                    including the navigation bar, hero section,
+                    about section, featured projects, skills,
+                    experience and contact section. The navigation
+                    bar and footer are shared across the application.
                 </p>
 
-            </div>
+                <p>
+                    <strong>Routing:</strong> React Router handles
+                    navigation between the homepage, projects
+                    listing and individual project pages. The
+                    application uses BrowserRouter to manage
+                    client-side navigation.
+                </p>
+
+                <p>
+                    <strong>Styling:</strong> Custom CSS is used
+                    throughout the application. Global styling
+                    variables define the colour scheme and
+                    typography, while individual stylesheets
+                    control component layouts and responsive
+                    behaviour.
+                </p>
+
+                <p>
+                    <strong>Project Media:</strong> Video previews
+                    are used to introduce selected projects.
+                    Individual project pages also provide
+                    additional footage and screenshots to
+                    demonstrate development work.
+                </p>
+
+                <p>
+                    <strong>Contact Form:</strong> Formspree
+                    integrates with the React contact component
+                    to process enquiries. The form includes
+                    required fields, validation messages,
+                    submission state handling and a success
+                    message after submission.
+                </p>
+
+                <p>
+                    <strong>Development Environment:</strong>
+                    Vite is used for the development server and
+                    production build process. Git and GitHub
+                    provide version control and source code
+                    management.
+                </p>
+
+            </section>
 
 
-            {/* Challenges */}
+            {/* Implementation Decisions */}
 
-            <div className="project-page_challenges">
+            <section className="project-page_challenges">
 
-                <h2>Challenges &amp; Solutions</h2>
+                <h2>Technical Decisions &amp; Solutions</h2>
 
                 <div className="project-page_challenges-grid">
 
-                    <div className="project-page_challenge">
-                        <h3>Challenge</h3>
+                    {implementationDecisions.map((item) => (
 
-                        <p>
-                            Describe a problem encountered during development.
-                        </p>
-                    </div>
+                        <article
+                            className="project-page_challenge"
+                            key={item.title}
+                        >
 
-                    <div className="project-page_challenge">
-                        <h3>Solution</h3>
+                            <h3>{item.title}</h3>
 
-                        <p>
-                            Explain how the problem was investigated and
-                            resolved.
-                        </p>
-                    </div>
+                            <p>
+                                <strong>Consideration:</strong>{" "}
+                                {item.challenge}
+                            </p>
 
-                </div>
+                            <p>
+                                <strong>Implementation:</strong>{" "}
+                                {item.solution}
+                            </p>
 
-            </div>
+                        </article>
 
-
-            {/* Gallery */}
-
-            <div className="project-page_gallery">
-
-                <h2>Gameplay &amp; Screenshots</h2>
-
-                <div className="project-page_gallery-grid">
-
-                    <img src="" alt="Project screenshot" />
-
-                    <img src="" alt="Project screenshot" />
-
-                    <img src="" alt="Project screenshot" />
-
-                    <img src="" alt="Project screenshot" />
+                    ))}
 
                 </div>
 
-            </div>
+            </section>
 
 
             {/* What I Learned */}
 
-            <div className="project-page_learning">
+            <section className="project-page_learning">
 
                 <h2>What I Learned</h2>
 
                 <p>
-                    Explain the main skills, concepts, and experience gained
-                    while developing the project.
+                    Developing this portfolio has strengthened
+                    my understanding of React and modern
+                    frontend development. It provided practical
+                    experience building component-based
+                    applications, managing application routes
+                    and organising a larger codebase.
                 </p>
 
-            </div>
+                <p>
+                    I also gained experience working with
+                    responsive CSS, integrating third-party
+                    services and handling form submission
+                    states within React.
+                </p>
+
+                <p>
+                    One of the most valuable aspects of the
+                    project has been creating individual
+                    case-study pages for my other projects.
+                    This allowed me to practise presenting
+                    technical work clearly while continuing
+                    to improve the structure and maintainability
+                    of the application.
+                </p>
+
+            </section>
 
 
             {/* Project Links */}
 
-            <div className="project-page_links">
+            <nav
+                className="project-page_links"
+                aria-label="Portfolio project links"
+            >
 
-                <a href="#github">
-                    GitHub
+                <a
+                    href="https://github.com/Sami-Red/portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub Repository
                 </a>
 
-                <a href="#demo">
-                    Play / Demo
-                </a>
+                <Link to="/projects">
+                    View Other Projects
+                </Link>
 
-            </div>
+            </nav>
 
-        </div>
+
+        </main>
+
     );
+
 }
 
 export default ProjectPage;

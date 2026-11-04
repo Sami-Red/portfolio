@@ -73,8 +73,6 @@ function App() {
                     path="/projects/tank-world"
                     element={<TankWorld />}
                 />
-
-
             </Routes>
 
             <Footer />
