@@ -1,12 +1,12 @@
 import "./GeneralProjectStyling.css";
 
 // Danube Fields assets
-import farmHero from "../../assets/project/individualProjects/danubefields/Danube_3.PNG";
-import farmOverview from "../../assets/project/individualProjects/danubefields/Danube_1.PNG";
-import farmDetail from "../../assets/project/individualProjects/danubefields/Danube_2.PNG";
-import unrealEditor from "../../assets/project/individualProjects/danubefields/Danube_4.PNG";
-import unrealOverview from "../../assets/project/individualProjects/danubefields/Danube_5.PNG";
-import projectVideo from "../../assets/project/individualProjects/danubefields/Danube_video.mp4";
+import farmHero from "../../assets/project/individualProjects/Danubefields/Danube_3.PNG";
+import farmOverview from "../../assets/project/individualProjects/Danubefields/Danube_1.PNG";
+import farmDetail from "../../assets/project/individualProjects/Danubefields/Danube_2.PNG";
+import unrealEditor from "../../assets/project/individualProjects/Danubefields/Danube_4.PNG";
+import unrealOverview from "../../assets/project/individualProjects/Danubefields/Danube_5.PNG";
+import projectVideo from "../../assets/project/individualProjects/Danubefields/Danube_video.mp4";
 
 function DanubeFields() {
     const screenshots = [

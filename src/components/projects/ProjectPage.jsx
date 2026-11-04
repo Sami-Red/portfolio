@@ -1,8 +1,6 @@
+
 import "./GeneralProjectStyling.css";
 import { Link } from "react-router-dom";
-
-import portfolioVideo from "../../assets/project/Portfolio.mp4";
-
 
 function ProjectPage() {
 
@@ -25,7 +23,7 @@ function ProjectPage() {
         {
             title: "Project Showcases",
             description:
-                "Created dedicated project pages containing gameplay footage, screenshots, technical information and descriptions of development work.",
+                "Created dedicated project pages containing technical information, descriptions and supporting media to demonstrate individual development projects.",
         },
         {
             title: "Contact Integration",
@@ -38,7 +36,6 @@ function ProjectPage() {
                 "Added links to GitHub, LinkedIn and itch.io, alongside CV access to make professional information and projects easier to explore.",
         },
     ];
-
 
     const implementationDecisions = [
         {
@@ -64,11 +61,8 @@ function ProjectPage() {
         },
     ];
 
-
     return (
-
         <main className="project-page">
-
 
             {/* Project Header */}
 
@@ -77,38 +71,13 @@ function ProjectPage() {
                 <h1>Portfolio Website</h1>
 
                 <p>
-                    A personal software engineering portfolio
-                    built with React and Vite, designed to showcase
-                    my projects, technical skills and development
-                    experience through a responsive web interface.
+                    A personal portfolio built with React and Vite,
+                    designed to showcase my projects, technical
+                    skills and development experience through
+                    a responsive web interface.
                 </p>
 
             </header>
-
-
-            {/* Main Project Media */}
-
-            <section
-                className="project-page_media"
-                aria-label="Portfolio website demonstration"
-            >
-
-                <video
-                    className="project-page_gameplay-video"
-                    controls
-                    preload="metadata"
-                    playsInline
-                >
-                    <source
-                        src={portfolioVideo}
-                        type="video/mp4"
-                    />
-
-                    Your browser does not support HTML video.
-
-                </video>
-
-            </section>
 
 
             {/* Project Overview */}
@@ -274,11 +243,11 @@ function ProjectPage() {
                 </p>
 
                 <p>
-                    <strong>Project Media:</strong> Video previews
-                    are used to introduce selected projects.
-                    Individual project pages also provide
-                    additional footage and screenshots to
-                    demonstrate development work.
+                    <strong>Project Showcases:</strong> Featured
+                    project previews introduce selected work.
+                    Individual project pages provide more detailed
+                    information, technical explanations, screenshots
+                    and additional gameplay footage.
                 </p>
 
                 <p>
@@ -393,11 +362,8 @@ function ProjectPage() {
 
             </nav>
 
-
         </main>
-
     );
-
 }
 
 export default ProjectPage;

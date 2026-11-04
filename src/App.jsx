@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import FeaturedProjects from "./components/FeaturedProjects";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/projects";
 
 import ProjectPage from "./components/projects/ProjectPage";
 import ValhallaDeception from "./components/projects/ValhallaDeception";

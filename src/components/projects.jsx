@@ -1,5 +1,5 @@
 
-import "./Projects.css";
+import "./projects.css";
 import { Link } from "react-router-dom";
 
 // Portfolio and existing project videos

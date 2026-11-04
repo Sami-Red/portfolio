@@ -1,17 +1,17 @@
 import "./Skills.css"
 
-import gitlogo from "../assets/skills/git-logo.svg"
-import githublogo from "../assets/skills/github-logo.svg"
-import vscodeLogo from "../assets/skills/vscode-logo.svg"
-import visualStudioLogo from "../assets/skills/visualstudio-logo.svg"
-import unityLogo from "../assets/skills/unity-logo.svg"
-import unrealEngineLogo from "../assets/skills/UE5-logo.svg"
+import gitlogo from "../assets/Skills/git-logo.svg"
+import githublogo from "../assets/Skills/github-logo.svg"
+import vscodeLogo from "../assets/Skills/vscode-logo.svg"
+import visualStudioLogo from "../assets/Skills/visualstudio-logo.svg"
+import unityLogo from "../assets/Skills/unity-logo.svg"
+import unrealEngineLogo from "../assets/Skills/UE5-logo.svg"
 
-import csharpLogo from "../assets/skills/csharp-logo.svg"
-import reactLogo from "../assets/skills/react-logo.svg"
-import htmlLogo from "../assets/skills/html5-logo.svg"
-import cssLogo from "../assets/skills/css3-logo.svg"
-import pythonLogo from "../assets/skills/python-logo.svg"
+import csharpLogo from "../assets/Skills/csharp-logo.svg"
+import reactLogo from "../assets/Skills/react-logo.svg"
+import htmlLogo from "../assets/Skills/html5-logo.svg"
+import cssLogo from "../assets/Skills/css3-logo.svg"
+import pythonLogo from "../assets/Skills/python-logo.svg"
 
 function Skills() {
     return (
