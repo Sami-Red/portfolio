@@ -1,11 +1,10 @@
-/* cd C:\Users\redic\Desktop\Portfolio\software-engineer-portfolio then npm.cmd run dev */
 
 import { Link } from "react-router-dom";
 
-import profilePic from "../assets/navbar/logo.png";
 import githublogo from "../assets/navbar/github-logo.svg";
 import linkedinLogo from "../assets/navbar/linkedin-logo.svg";
 import itchiologo from "../assets/navbar/itchio-logo.svg";
+import profilePic from "../assets/navbar/logo.svg";
 
 import "./Navbar.css";
 
@@ -14,14 +13,18 @@ function Navbar() {
         <div className="navbar">
 
             <div className="navbar_left">
-                <a href="/">
-                    <img src={profilePic} alt="Home" />
-                </a>
+                <Link to="/">
+                    <img src={profilePic} alt="Sami Uysal - Home" />
+                </Link>
             </div>
 
             <div className="navbar_right">
                 <div className="navbar_buttons">
-                    <a href="/">Home</a>
+
+                    <Link to="/">
+                        Home
+                    </Link>
+
                     <Link to="/projects">
                         Projects
                     </Link>

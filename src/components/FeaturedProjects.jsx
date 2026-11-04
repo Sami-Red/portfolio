@@ -93,7 +93,9 @@ function FeaturedProjects() {
                             >
                             GitHub
                             </a>
-                            <a href="#CyberXMore">View More</a>
+                            <Link to="/projects/cyberx-race">
+                                View More
+                            </Link>
                         </div>
                     </div>
                 </div>

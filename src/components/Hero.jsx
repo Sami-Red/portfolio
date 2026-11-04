@@ -7,7 +7,7 @@ function Hero(){
         <div className="hero">
             <div className="hero_left">
             <h1>Sami Uysal</h1>
-            <h2>Graduate Software Engineer</h2>
+            <h2>Computer Games Development Graduate</h2>
             <p>Recent graduate, passionate about creating innovative software solutions.</p>
             <div className="hero_buttons">
                 <Link to="/projects">

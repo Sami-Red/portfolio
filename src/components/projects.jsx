@@ -12,7 +12,7 @@ import ValhallasDeception from "../assets/project/ValhallasDeception.mp4";
 import Dinomanager from "../assets/project/individualProjects/dinoTaskManager/Dinomanager_Video.mp4";
 import PhantomHunters from "../assets/project/individualProjects/PhantomHunters/PhantomHunters_Video.mp4";
 import TheFoxHasAGun from "../assets/project/individualProjects/theFoxHasAGun/TheFoxHasAGun_video.mp4";
-import DanubeFields from "../assets/project/individualProjects/danubefields/Danube_video.mp4";
+import DanubeFields from "../assets/project/individualProjects/Danubefields/Danube_video.mp4";
 
 
 function Projects() {
